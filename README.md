@@ -43,7 +43,7 @@ Y
 ## Developers
 
 Full-Stack --> this repo[Tahmuras Pirimov](https://github.com/tahmurasp)
-- Tahmuras Pirimov[Tahmuras Pirimov](https://github.com/tahmurasp) - Cybersecurity & Information Assurance, Methodist University '26
+- [Tahmuras Pirimov](https://github.com/tahmurasp) - Cybersecurity & Information Assurance, Methodist University '26
 
 
 ## Author
