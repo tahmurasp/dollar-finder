@@ -1,0 +1,96 @@
+@font-face {
+  font-family: "Montserrat";
+  src: local("Montserrat"),
+    url(./../fonts/Montserrat-SemiBold.ttf) format("truetype");
+}
+
+.about-main {
+  background-color: #a3c4bc;
+  width: 100vw;
+  height: fit-content;
+  min-height: 40rem;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about-demo-article {
+  width: 100vw;
+  height: fit-content;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-evenly;
+  margin: 4rem 0;
+  align-items: center;
+}
+.about-demo-video-div {
+  height: 20rem;
+  width: 500px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.about-demo-video {
+  border-radius: 1rem;
+}
+
+.about-demo-section {
+  width: 20rem;
+  height: 15rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.about-demo-h3 {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  font-size: 2rem;
+}
+.about-demo-h4 {
+  margin: 0;
+  font-size: 1.2rem;
+  font-family: "Overpass Mono", monospace;
+  text-align: center;
+  word-wrap: normal;
+}
+
+@media (max-width: 1000px) {
+  .about-demo-article {
+    flex-direction: column;
+    margin: 1rem 0;
+  }
+  .about-demo-article-reverse {
+    flex-direction: column-reverse;
+  }
+
+  .about-demo-section {
+    height: 10rem;
+  }
+}
+@media (max-width: 600px) {
+  .about-demo-article {
+    margin: 0.5rem 0;
+  }
+
+  .about-demo-video-div {
+    height: 12rem;
+    width: 300px;
+  }
+  .about-demo-video {
+    width: 300px;
+  }
+
+  .about-demo-section {
+    width: 70vw;
+    height: 10rem;
+  }
+  .about-demo-h3 {
+    font-size: 1.5rem;
+  }
+  .about-demo-h4 {
+    font-size: 1rem;
+  }
+}

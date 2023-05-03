@@ -1,0 +1,234 @@
+.product-main {
+  width: 100vw;
+  height: fit-content;
+  background-color: #a3c4bc;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0;
+  padding: 6.25rem 0;
+}
+.product-page-background {
+  border-radius: 2rem;
+  overflow: hidden;
+}
+.product-background {
+  width: 70vw;
+  height: fit-content;
+  background-color: #e7efc5;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  overflow-x: hidden;
+}
+.product-loading {
+  width: inherit;
+  height: 85vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.product-container {
+  width: 70vw;
+  height: 38rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.product-img {
+  width: 15rem;
+  height: 38rem;
+  object-fit: contain;
+  background-color: #cad1ad;
+}
+.product-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  font-family: "Overpass Mono", monospace;
+  font-size: 1.25rem;
+  height: 38rem;
+  text-align: center;
+  word-wrap: normal;
+  width: calc(70vw - 15rem);
+}
+.product-title {
+  margin: 1rem;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: bolder;
+}
+.product-price {
+  margin: 1rem;
+  padding: 0;
+}
+.product-location {
+  margin: 1rem;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.product-location > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.product-location > p,
+.product-location > div > strong {
+  margin: 1rem;
+}
+.googlemaps-icon-background {
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+  border: solid #cad1ad;
+}
+.googlemaps-icon-background:hover {
+  background-color: #cad1ad;
+}
+.googlemaps-icon {
+  height: 3rem;
+  margin: 0.5rem;
+}
+.product-description {
+  margin: 1rem;
+  padding: 0;
+}
+.product-date {
+  margin: 0 1rem;
+  padding: 0;
+  font-size: 1rem;
+}
+.product-review {
+  height: fit-content;
+  width: 70vw;
+  background-color: #c6cf9f;
+}
+.product-votebox {
+  height: 5rem;
+  width: 70vw;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+.product-vote-count {
+  width: 2rem;
+  height: fit-content;
+  margin: 0 1rem;
+  font-size: 1.5rem;
+  text-align: center;
+  font-family: "Montserrat", sans-serif;
+}
+/* .product-commentbox-heading {
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5rem;
+  margin: 0 1rem;
+}
+.product-commentbox-content {
+  width: inherit;
+  height: fit-content;
+  display: flex;
+  flex-direction: column;
+}
+.product-commentbox-newcomment {
+  width: 60vw;
+  height: fit-content;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  margin: 1rem 0;
+} */
+
+@media (max-width: 1000px) {
+  .product-container {
+    flex-direction: column;
+    height: 50rem;
+  }
+  .product-img {
+    width: 70vw;
+    height: 15rem;
+  }
+  .product-info {
+    width: 70vw;
+    height: 35rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .product-main {
+    margin: 0;
+    padding: 3rem 0;
+  }
+  .product-back-link {
+    width: 7rem;
+    margin: 1rem 0;
+    height: 2rem;
+  }
+  .product-background {
+    width: 80vw;
+  }
+  .product-container {
+    width: 80vw;
+    height: 45rem;
+  }
+  .product-img {
+    width: 80vw;
+  }
+  .product-info {
+    font-size: 1rem;
+    height: 30rem;
+    justify-content: space-around;
+    width: 80vw;
+  }
+  .product-title {
+    margin: 0.5rem 1rem;
+    font-size: 1.25rem;
+  }
+  .product-price {
+    margin: 0.5rem 1rem;
+  }
+  .product-location {
+    margin: 0.5rem 1rem;
+    flex-direction: column;
+  }
+  .googlemaps-icon-background {
+    height: 3rem;
+    width: 3rem;
+  }
+  .googlemaps-icon {
+    height: 2rem;
+  }
+  .product-description {
+    margin: 0.5rem 1rem;
+  }
+  .product-date {
+    margin: 0 1rem;
+    font-size: 0.75rem;
+  }
+  .product-review {
+    height: fit-content;
+    width: 80vw;
+  }
+  .product-votebox {
+    width: 80vw;
+    height: 4rem;
+  }
+  .product-vote-count {
+    margin: 0;
+    font-size: 1rem;
+  }
+  .product-commentbox-heading {
+    font-size: 1rem;
+  }
+  .product-commentbox-content {
+  }
+}

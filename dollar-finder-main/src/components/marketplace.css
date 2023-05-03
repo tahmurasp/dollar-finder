@@ -1,0 +1,51 @@
+.marketplace-background {
+  height: fit-content;
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 0 6rem 0;
+}
+.marketplace-sortby-form {
+  width: fit-content;
+  height: fit-content;
+  margin: 2.5rem 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.marketplace-sortby-form > label {
+  font-family: "Overpass Mono", monospace;
+  font-size: 1.25rem;
+  margin: 0 0.5rem;
+}
+.posts-background {
+  width: 90vw;
+  height: fit-content;
+  min-height: 10rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: transparent;
+  margin: 0;
+  padding: 0.625rem;
+  border-radius: 0.625rem;
+}
+
+@media (max-width: 600px) {
+  .marketplace-sortby-form {
+    margin: 1rem 0;
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .marketplace-sortby-form > label {
+    font-size: 1rem;
+    margin: 0.5rem;
+  }
+  .posts-background {
+    width: 90vw;
+    padding: 0.625rem;
+  }
+}

@@ -1,0 +1,107 @@
+@font-face {
+  font-family: "Overpass Mono";
+  src: local("Overpass Mono"),
+    url(./../fonts/OverpassMono-Regular.ttf) format("truetype");
+}
+
+.home-main {
+  width: fit-content;
+  height: fit-content;
+}
+
+.search-bar-background {
+  width: 100vw;
+  height: 18.75rem;
+  background-color: #a3c4bc;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./../images/image_2021-07-29_21-26-06.png);
+  background-repeat: no-repeat;
+  background-position: 50% 15%;
+  position: relative;
+}
+
+.logo-text {
+  height: 6.25rem;
+  padding: 0;
+  margin: 0.5rem 0;
+}
+.logo-tagline {
+  font-family: "Teko", monospace;
+  font-size: 2.5rem;
+  margin: 0;
+  padding: 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+.search-form {
+  width: 31.25rem;
+  height: fit-content;
+  margin: 0;
+  padding: 0;
+  border-radius: 2.2rem;
+  background-color: white;
+  display: flex;
+  align-items: center;
+  box-shadow: 2px 2px 4px 2px #5c706c;
+}
+.search-bar {
+  border-radius: 2.2rem;
+  width: 22.5rem;
+  height: 4.4rem;
+  padding: 0;
+  margin: 0 0 0 4.4rem;
+
+  border-width: 0;
+  font-family: "Overpass Mono", monospace;
+  font-size: 2rem;
+  text-align: center;
+}
+.search-bar:focus {
+  outline: none;
+}
+input[type="search"]::-ms-clear {
+  display: none;
+  width: 0;
+  height: 0;
+}
+input[type="search"]::-ms-reveal {
+  display: none;
+  width: 0;
+  height: 0;
+}
+
+input[type="search"]::-webkit-search-decoration,
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-results-button,
+input[type="search"]::-webkit-search-results-decoration {
+  display: none;
+}
+.home-main-main {
+  width: 100vw;
+  height: fit-content;
+  background-color: #e7efc5;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 600px) {
+  .search-bar-background {
+    height: 12rem;
+    background-position: 70% 75%;
+  }
+  .logo-text {
+    height: 4rem;
+  }
+  .logo-tagline {
+    font-size: 1.5rem;
+    width: 90vw;
+  }
+  .search-form {
+    transform: scale(0.6);
+  }
+}
